@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 
 function Card({
   title,
@@ -14,14 +13,19 @@ function Card({
   buttonText,
   onButtonClick,
   children,
+  hover = true,
 }) {
+  const hoverClass = hover
+    ? "group hover:scale-105 hover:shadow-[0_6px_15px_#8CBFAD] "
+    : "";
   return (
     <div
       style={{
         "--fade-delay": delay,
         backgroundImage: `linear-gradient(to left, ${gradientFrom}, ${gradientTo})`,
+        boxShadow: `0 4px 10px ${gradientTo}`,
       }}
-      className={`group animate-fadeIn will-change-transform will-change-opacity relative flex items-center justify-center overflow-hidden rounded-3xl p-6 text-center text-lg font-medium ${textColor} shadow-[0_4px_10px_#8CBFAD] transition-all hover:scale-105 hover:shadow-[0_6px_15px_#8CBFAD] md:col-span-${col} md:row-span-${row}`}
+      className={`animate-fadeIn will-change-transform will-change-opacity relative flex items-center justify-center overflow-hidden rounded-3xl p-6 text-center text-lg font-medium ${textColor} shadow-[0_4px_10px_#8CBFAD] transition-all col-span-${col} row-span-${row} ${hoverClass}`}
     >
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black opacity-0 transition-opacity duration-500 group-hover:opacity-70 rounded-3xl"></div>
       <div className="absolute inset-0 flex flex-col items-center justify-center transition-transform duration-500 group-hover:translate-y-[-10%]">
