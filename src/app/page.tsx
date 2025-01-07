@@ -25,6 +25,7 @@ const cardData = [
   },
   {
     title: "Projects",
+    description: "Check out the projects I’ve built and contributed to.",
     gradientFrom: "#F4A261",
     gradientTo: "#FFE8D6",
     textColor: "text-[#2B2D42]",
@@ -35,7 +36,9 @@ const cardData = [
     buttonText: "See More",
   },
   {
-    title: "Education",
+    title: "Education & Certifications",
+    description:
+      "Showcasing my academic qualifications and professional achievements.",
     gradientFrom: "#2A9D8F",
     gradientTo: "#A8DADC",
     icon: <AcademicCapIcon className="size-16 " />,
@@ -74,6 +77,7 @@ const cardData = [
   },
   {
     title: "Technology",
+    description: "Explore the tools and frameworks I work with.",
     gradientFrom: "#FFB400",
     gradientTo: "#fde8b7",
     icon: <CpuChipIcon className="size-16 " />,
@@ -84,6 +88,7 @@ const cardData = [
   },
   {
     title: "Resume",
+    description: "A snapshot of my skills, experience, and achievements.",
     gradientFrom: "#E9C46A",
     gradientTo: "#FFE8D6",
     textColor: "text-[#2B2D42]",
@@ -107,9 +112,10 @@ const cardData = [
   {
     title: "Blog",
     gradientFrom: "#9AD1EA",
+    description: "Sharing insights, ideas, and my journey in tech and beyond.",
     gradientTo: "#e5f5fd",
     textColor: "text-[#2B2D42]",
-    icon: <PencilIcon className="size-16 " />,
+    icon: <PencilIcon className="size-12 " />,
     delay: "1.8s",
     col: 2,
     row: 2,
@@ -120,7 +126,7 @@ const cardData = [
 export default function Home() {
   return (
     <div className="flex h-screen w-full items-center justify-center bg-[#F8ECD5]">
-      <div className="grid w-screen gap-7 p-5 md:h-screen grid-cols-9 grid-rows-9">
+      <div className="grid w-full gap-7 p-5 md:h-screen grid-cols-9 grid-rows-9 auto-rows-fr">
         {cardData.map((card, index) => (
           <Card
             key={index}
