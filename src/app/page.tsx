@@ -1,3 +1,4 @@
+"use client";
 import Card from "./component/Card";
 import { home } from "./constant";
 
