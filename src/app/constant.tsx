@@ -124,3 +124,34 @@ export const home = [
     buttonText: "See More",
   },
 ];
+
+export const workExperience = [
+  {
+    company: "ParishOnNet",
+    location: "Chicago, IL",
+    role: "Software Engineer",
+    description:
+      "Streamlined development and testing processes, designed reusable components, and collaborated on API creation.",
+  },
+  {
+    company: "Jaia Robotics",
+    location: "Bristol, Rhode Island",
+    role: "Software Developer Intern",
+    description:
+      "Designed user dashboards, integrated REST APIs, and enhanced UI/UX for efficient and responsive interfaces.",
+  },
+  {
+    company: "Indian Institute of Technology Bombay",
+    location: "Mumbai",
+    role: "Sr. Project Technical Assistant",
+    description:
+      "Enhanced UI functionality, improved code quality, and optimized simulator usability by 25%.",
+  },
+  {
+    company: "Indian Institute of Technology Bombay",
+    location: "Mumbai",
+    role: "Project Research Assistant",
+    description:
+      "Developed a Scilab Converter prototype using Python to migrate block diagram models and implement new regulations.",
+  },
+];

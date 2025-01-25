@@ -40,6 +40,7 @@ const Card = ({
 
   const handleClick = () => {
     if (path) {
+      router.prefetch(path);
       router.push(path);
     }
   };
