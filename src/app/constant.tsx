@@ -20,6 +20,7 @@ export const home = [
     col: 3,
     row: 3,
     buttonText: "See More",
+    hover: true,
     path: "/work-experience",
   },
   {
@@ -33,6 +34,7 @@ export const home = [
     col: 3,
     row: 3,
     buttonText: "See More",
+    hover: true,
     path: "/projects",
   },
   {
@@ -46,6 +48,7 @@ export const home = [
     col: 3,
     row: 3,
     buttonText: "See More",
+    hover: true,
     path: "/education-cert",
   },
   {
@@ -86,6 +89,7 @@ export const home = [
     col: 3,
     row: 3,
     buttonText: "See More",
+    hover: true,
     path: "/technology",
   },
   {
@@ -99,6 +103,7 @@ export const home = [
     col: 3,
     row: 3,
     buttonText: "See More",
+    hover: true,
   },
   {
     title: "Contact Me",
@@ -108,13 +113,11 @@ export const home = [
     delay: "2.1s",
     col: 3,
     row: 3,
-    buttonText: "See More",
-    hover: false,
   },
   {
     title: "Blog",
-    gradientFrom: "#9AD1EA",
     description: "Sharing insights, ideas, and my journey in tech and beyond.",
+    gradientFrom: "#9AD1EA",
     gradientTo: "#e5f5fd",
     textColor: "text-[#2B2D42]",
     icon: <PencilIcon className="size-14" />,
@@ -122,6 +125,7 @@ export const home = [
     col: 3,
     row: 3,
     buttonText: "See More",
+    hover: true,
   },
 ];
 
@@ -132,6 +136,11 @@ export const workExperience = [
     role: "Software Engineer",
     description:
       "Streamlined development and testing processes, designed reusable components, and collaborated on API creation.",
+    gradientDirection: "top",
+    gradientFrom: "#56B3FA",
+    gradientTo: "#2E4053",
+    col: 5,
+    row: 3,
   },
   {
     company: "Jaia Robotics",
@@ -139,6 +148,11 @@ export const workExperience = [
     role: "Software Developer Intern",
     description:
       "Designed user dashboards, integrated REST APIs, and enhanced UI/UX for efficient and responsive interfaces.",
+    gradientDirection: "top",
+    gradientFrom: "#87CEEB",
+    gradientTo: "#343A40",
+    col: 4,
+    row: 3,
   },
   {
     company: "Indian Institute of Technology Bombay",
@@ -146,6 +160,21 @@ export const workExperience = [
     role: "Sr. Project Technical Assistant",
     description:
       "Enhanced UI functionality, improved code quality, and optimized simulator usability by 25%.",
+    gradientDirection: "top",
+    gradientFrom: "#4682B4",
+    gradientTo: "#2F4F7F",
+    col: 3,
+    row: 6,
+  },
+  {
+    company: "Work Experience",
+    gradientFrom: "#3C91E6",
+    gradientTo: "#8CBFAD",
+    col: 3,
+    row: 3,
+    buttonText: "Go Back",
+    path: "/",
+    hover: true,
   },
   {
     company: "Indian Institute of Technology Bombay",
@@ -153,5 +182,18 @@ export const workExperience = [
     role: "Project Research Assistant",
     description:
       "Developed a Scilab Converter prototype using Python to migrate block diagram models and implement new regulations.",
+    gradientDirection: "top",
+    gradientFrom: "#6495ED",
+    gradientTo: "#455A64",
+    col: 3,
+    row: 6,
+  },
+  {
+    company: "More to Come ...",
+    gradientDirection: "top",
+    gradientFrom: "#3C91E6",
+    gradientTo: "#2E6DA4",
+    col: 3,
+    row: 3,
   },
 ];

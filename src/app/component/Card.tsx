@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 interface CardProps {
   title: React.ReactNode;
   description?: string;
+  gradientDirection?: string;
   gradientFrom: string;
   gradientTo: string;
   textColor?: string;
@@ -20,6 +21,7 @@ interface CardProps {
 const Card = ({
   title,
   description,
+  gradientDirection,
   gradientFrom,
   gradientTo,
   textColor = "text-white",
@@ -30,7 +32,7 @@ const Card = ({
   buttonText,
   path,
   children,
-  hover = true,
+  hover = false,
 }: CardProps) => {
   const router = useRouter();
 
@@ -50,7 +52,10 @@ const Card = ({
       style={
         {
           "--fade-delay": delay,
-          backgroundImage: `linear-gradient(to left, ${gradientFrom}, ${gradientTo})`,
+          backgroundImage:
+            gradientDirection === "top"
+              ? `linear-gradient(to bottom, ${gradientFrom}, ${gradientTo})`
+              : `linear-gradient(to left, ${gradientFrom}, ${gradientTo})`,
           boxShadow: `0 4px 10px ${gradientTo}`,
         } as React.CSSProperties
       }
