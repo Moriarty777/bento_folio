@@ -5,7 +5,7 @@ import { home } from "./constant";
 export default function Home() {
   return (
     <div className="flex h-screen w-full items-center justify-center bg-[#F8ECD5]">
-      <div className="grid w-full gap-5 p-5 md:h-screen md:grid-cols-9 md:grid-rows-9 auto-rows-fr grid-cols-1 grid-rows-1">
+      <div className="grid w-full gap-5 p-5 md:h-screen md:grid-cols-9 md:grid-rows-9 auto-rows-fr grid-cols-1 grid-rows-1 overflow-hidden">
         {home.map((card, index) => (
           <Card
             key={index}

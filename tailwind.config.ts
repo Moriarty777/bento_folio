@@ -13,6 +13,8 @@ export default {
     {
       pattern: /row-span-(\d+)/, // Matches row-span-1 to row-span-9
     },
+    // { pattern: /motion-delay-\[\d+ms\]/ },
+    // { pattern: /motion-delay-\[(\d+)ms\]/ },
   ],
   theme: {
     extend: {
@@ -20,17 +22,8 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-      animation: {
-        fadeIn: "fadeIn var(--fade-delay, 0s) ease-in-out",
-      },
-      keyframes: {
-        fadeIn: {
-          "0%": { opacity: "0", transform: "translateY(20px)" },
-          "50%": { opacity: "0", transform: "translateY(20px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
-      },
     },
   },
-  plugins: [],
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  plugins: [require("tailwindcss-motion")],
 } satisfies Config;

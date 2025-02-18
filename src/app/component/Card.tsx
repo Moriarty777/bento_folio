@@ -26,7 +26,7 @@ const Card = ({
   gradientTo,
   textColor = "text-white",
   icon,
-  delay = "0s",
+  delay,
   col,
   row,
   buttonText,
@@ -51,7 +51,7 @@ const Card = ({
     <div
       style={
         {
-          "--fade-delay": delay,
+          animationDelay: `${delay}`,
           backgroundImage:
             gradientDirection === "top"
               ? `linear-gradient(to bottom, ${gradientFrom}, ${gradientTo})`
@@ -59,7 +59,7 @@ const Card = ({
           boxShadow: `0 4px 10px ${gradientTo}`,
         } as React.CSSProperties
       }
-      className={`animate-fadeIn relative flex flex-col items-center justify-center overflow-hidden rounded-3xl p-6 text-center ${textColor} transition-all col-span-${col} row-span-${row} ${hoverClass} min-h-[150px] sm:min-h-[200px]`}
+      className={`motion motion-preset-pop relative flex flex-col items-center justify-center overflow-hidden rounded-3xl p-6 text-center ${textColor} transition-all col-span-${col} row-span-${row} ${hoverClass} min-h-[150px] sm:min-h-[200px]`}
     >
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black opacity-0 transition-opacity duration-500 group-hover:opacity-70 rounded-3xl"></div>
       <div className="z-10 flex flex-col items-center justify-center space-y-4 px-4 py-4 transition-transform duration-500 group-hover:translate-y-[-5%]">
