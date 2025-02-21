@@ -1,0 +1,70 @@
+export const workExperience = [
+  {
+    company: "ParishOnNet",
+    location: "Chicago, IL",
+    role: "Software Engineer",
+    description:
+      "Streamlined development and testing processes, designed reusable components, and collaborated on API creation.",
+    gradientFrom: "#56B3FA",
+    gradientTo: "#2E4053",
+    col: 5,
+    row: 3,
+    variant: "sub",
+  },
+  {
+    company: "Jaia Robotics",
+    location: "Bristol, Rhode Island",
+    role: "Software Developer Intern",
+    description:
+      "Designed user dashboards, integrated REST APIs, and enhanced UI/UX for efficient and responsive interfaces.",
+    gradientFrom: "#87CEEB",
+    gradientTo: "#343A40",
+    col: 4,
+    row: 3,
+    variant: "sub",
+  },
+  {
+    company: "Indian Institute of Technology Bombay",
+    location: "Mumbai",
+    role: "Sr. Project Technical Assistant",
+    description:
+      "Enhanced UI functionality, improved code quality, and optimized simulator usability by 25%.",
+
+    gradientFrom: "#4682B4",
+    gradientTo: "#2F4F7F",
+    col: 3,
+    row: 6,
+    variant: "sub",
+  },
+  {
+    company: "Work Experience",
+    gradientFrom: "#3C91E6",
+    gradientTo: "#8CBFAD",
+    col: 3,
+    row: 3,
+    buttonText: "Go Back",
+    path: "/",
+    hover: true,
+    variant: "main",
+  },
+  {
+    company: "Indian Institute of Technology Bombay",
+    location: "Mumbai",
+    role: "Project Research Assistant",
+    description:
+      "Developed a Scilab Converter prototype using Python to migrate block diagram models and implement new regulations.",
+    gradientFrom: "#6495ED",
+    gradientTo: "#455A64",
+    col: 3,
+    row: 6,
+    variant: "sub",
+  },
+  {
+    company: "More to Come ...",
+    gradientFrom: "#3C91E6",
+    gradientTo: "#2E6DA4",
+    col: 3,
+    row: 3,
+    variant: "sub",
+  },
+];

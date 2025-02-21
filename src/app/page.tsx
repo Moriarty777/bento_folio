@@ -1,4 +1,5 @@
 "use client";
+
 import Card from "./component/Card";
 import { home } from "./constant";
 
@@ -21,6 +22,7 @@ export default function Home() {
             buttonText={card.buttonText}
             hover={card.hover}
             path={card.path}
+            variant={card.variant}
           >
             {card.children}
           </Card>

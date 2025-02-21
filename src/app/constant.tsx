@@ -14,7 +14,7 @@ export const home = [
     title: "Work Experience",
     description: "Explore my journey in the tech industry.",
     gradientFrom: "#3C91E6",
-    gradientTo: "#8CBFAD",
+    gradientTo: "#c6e7db",
     icon: <HiOutlineBuildingOffice2 className="h-8 w-8" />,
     delay: "1000ms",
     col: 3,
@@ -22,6 +22,7 @@ export const home = [
     buttonText: "See More",
     hover: true,
     path: "/work-experience",
+    variant: "main",
   },
   {
     title: "Projects",
@@ -36,6 +37,7 @@ export const home = [
     buttonText: "See More",
     hover: true,
     path: "/projects",
+    variant: "main",
   },
   {
     title: "Education & Certifications",
@@ -50,6 +52,7 @@ export const home = [
     buttonText: "See More",
     hover: true,
     path: "/education-cert",
+    variant: "main",
   },
   {
     title: (
@@ -78,6 +81,7 @@ export const home = [
         />
       </div>
     ),
+    variant: "main",
   },
   {
     title: "Technology",
@@ -91,6 +95,7 @@ export const home = [
     buttonText: "See More",
     hover: true,
     path: "/technology",
+    variant: "main",
   },
   {
     title: "Resume",
@@ -102,8 +107,9 @@ export const home = [
     delay: "2700ms",
     col: 3,
     row: 3,
-    buttonText: "See More",
+    buttonText: "Download",
     hover: true,
+    variant: "main",
   },
   {
     title: "Contact Me",
@@ -113,6 +119,7 @@ export const home = [
     delay: "2400ms",
     col: 3,
     row: 3,
+    variant: "main",
   },
   {
     title: "Blog",
@@ -126,74 +133,6 @@ export const home = [
     row: 3,
     buttonText: "See More",
     hover: true,
-  },
-];
-
-export const workExperience = [
-  {
-    company: "ParishOnNet",
-    location: "Chicago, IL",
-    role: "Software Engineer",
-    description:
-      "Streamlined development and testing processes, designed reusable components, and collaborated on API creation.",
-    gradientDirection: "top",
-    gradientFrom: "#56B3FA",
-    gradientTo: "#2E4053",
-    col: 5,
-    row: 3,
-  },
-  {
-    company: "Jaia Robotics",
-    location: "Bristol, Rhode Island",
-    role: "Software Developer Intern",
-    description:
-      "Designed user dashboards, integrated REST APIs, and enhanced UI/UX for efficient and responsive interfaces.",
-    gradientDirection: "top",
-    gradientFrom: "#87CEEB",
-    gradientTo: "#343A40",
-    col: 4,
-    row: 3,
-  },
-  {
-    company: "Indian Institute of Technology Bombay",
-    location: "Mumbai",
-    role: "Sr. Project Technical Assistant",
-    description:
-      "Enhanced UI functionality, improved code quality, and optimized simulator usability by 25%.",
-    gradientDirection: "top",
-    gradientFrom: "#4682B4",
-    gradientTo: "#2F4F7F",
-    col: 3,
-    row: 6,
-  },
-  {
-    company: "Work Experience",
-    gradientFrom: "#3C91E6",
-    gradientTo: "#8CBFAD",
-    col: 3,
-    row: 3,
-    buttonText: "Go Back",
-    path: "/",
-    hover: true,
-  },
-  {
-    company: "Indian Institute of Technology Bombay",
-    location: "Mumbai",
-    role: "Project Research Assistant",
-    description:
-      "Developed a Scilab Converter prototype using Python to migrate block diagram models and implement new regulations.",
-    gradientDirection: "top",
-    gradientFrom: "#6495ED",
-    gradientTo: "#455A64",
-    col: 3,
-    row: 6,
-  },
-  {
-    company: "More to Come ...",
-    gradientDirection: "top",
-    gradientFrom: "#3C91E6",
-    gradientTo: "#2E6DA4",
-    col: 3,
-    row: 3,
+    variant: "main",
   },
 ];

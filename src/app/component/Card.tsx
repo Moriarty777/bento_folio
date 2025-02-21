@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation";
 interface CardProps {
   title: React.ReactNode;
   description?: string;
-  gradientDirection?: string;
   gradientFrom: string;
   gradientTo: string;
   textColor?: string;
@@ -16,12 +15,12 @@ interface CardProps {
   path?: string;
   children?: React.ReactNode;
   hover?: boolean;
+  variant?: string;
 }
 
 const Card = ({
   title,
   description,
-  gradientDirection,
   gradientFrom,
   gradientTo,
   textColor = "text-white",
@@ -33,11 +32,12 @@ const Card = ({
   path,
   children,
   hover = false,
+  variant,
 }: CardProps) => {
   const router = useRouter();
 
   const hoverClass = hover
-    ? "group hover:scale-105 hover:shadow-[0_6px_15px_#8CBFAD] "
+    ? `group hover:scale-105 hover:shadow-[${gradientFrom}] shadow-md`
     : "";
 
   const handleClick = () => {
@@ -46,20 +46,25 @@ const Card = ({
       router.push(path);
     }
   };
-
+  console.log(gradientTo, "Shadow");
   return (
     <div
       style={
         {
           animationDelay: `${delay}`,
           backgroundImage:
-            gradientDirection === "top"
-              ? `linear-gradient(to bottom, ${gradientFrom}, ${gradientTo})`
-              : `linear-gradient(to left, ${gradientFrom}, ${gradientTo})`,
-          boxShadow: `0 4px 10px ${gradientTo}`,
+            variant == "main"
+              ? `linear-gradient(to left, ${gradientFrom}, ${gradientTo})`
+              : undefined,
+          boxShadow:
+            variant === "main" ? `0 4px 10px ${gradientTo}` : undefined,
         } as React.CSSProperties
       }
-      className={`motion motion-preset-pop relative flex flex-col items-center justify-center overflow-hidden rounded-3xl p-6 text-center ${textColor} transition-all col-span-${col} row-span-${row} ${hoverClass} min-h-[150px] sm:min-h-[200px]`}
+      className={`motion motion-preset-pop relative flex flex-col items-center justify-center overflow-hidden rounded-3xl p-6 text-center ${textColor}  col-span-${col} row-span-${row} ${hoverClass} min-h-[150px] sm:min-h-[200px]
+      ${
+        variant == "sub" &&
+        "relative bg-white/30 backdrop-blur-md shadow-xl p-5 border border-white/50"
+      }`}
     >
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black opacity-0 transition-opacity duration-500 group-hover:opacity-70 rounded-3xl"></div>
       <div className="z-10 flex flex-col items-center justify-center space-y-4 px-4 py-4 transition-transform duration-500 group-hover:translate-y-[-5%]">
