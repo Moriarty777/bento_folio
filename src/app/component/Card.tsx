@@ -46,7 +46,7 @@ const Card = ({
       router.push(path);
     }
   };
-  console.log(gradientTo, "Shadow");
+
   return (
     <div
       style={

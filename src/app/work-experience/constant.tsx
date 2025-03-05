@@ -5,6 +5,7 @@ export const workExperience = [
     role: "Software Engineer",
     description:
       "Streamlined development and testing processes, designed reusable components, and collaborated on API creation.",
+    textColor: "text-gray-100",
     gradientFrom: "#56B3FA",
     gradientTo: "#2E4053",
     col: 5,
@@ -17,6 +18,7 @@ export const workExperience = [
     role: "Software Developer Intern",
     description:
       "Designed user dashboards, integrated REST APIs, and enhanced UI/UX for efficient and responsive interfaces.",
+    textColor: "text-gray-100",
     gradientFrom: "#87CEEB",
     gradientTo: "#343A40",
     col: 4,
@@ -29,7 +31,7 @@ export const workExperience = [
     role: "Sr. Project Technical Assistant",
     description:
       "Enhanced UI functionality, improved code quality, and optimized simulator usability by 25%.",
-
+    textColor: "text-gray-100",
     gradientFrom: "#4682B4",
     gradientTo: "#2F4F7F",
     col: 3,
@@ -53,6 +55,7 @@ export const workExperience = [
     role: "Project Research Assistant",
     description:
       "Developed a Scilab Converter prototype using Python to migrate block diagram models and implement new regulations.",
+    textColor: "text-gray-100",
     gradientFrom: "#6495ED",
     gradientTo: "#455A64",
     col: 3,
@@ -61,6 +64,7 @@ export const workExperience = [
   },
   {
     company: "More to Come ...",
+    textColor: "text-gray-100",
     gradientFrom: "#3C91E6",
     gradientTo: "#2E6DA4",
     col: 3,

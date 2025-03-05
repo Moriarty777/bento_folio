@@ -5,7 +5,7 @@ import { workExperience } from "./constant";
 
 export default function WorkExperience() {
   return (
-    <div className="flex h-screen w-full items-center justify-center bg-[#8bc5ff]">
+    <div className="flex h-screen w-full items-center justify-center bg-[url('/images/workexperience.jpg')] bg-cover bg-center">
       <div className="grid w-full gap-5 p-5 md:h-screen md:grid-cols-9 md:grid-rows-9 auto-rows-fr grid-cols-1 grid-rows-1">
         {workExperience.map((job, index) => (
           <Card
@@ -22,12 +22,13 @@ export default function WorkExperience() {
             variant={job.variant}
           >
             {job.role && (
-              <div className="mt-4 text-lg font-semibold text-gray-200">
-                {job.role} - {job.location}
+              <div className="mt-4 text-xl font-bold text-gray-800 drop-shadow-md">
+                {job.role} -{" "}
+                <span className="text-slate-700">{job.location}</span>
               </div>
             )}
 
-            <div className="mt-2 text-md text-gray-700">{job.description}</div>
+            <div className="mt-2 text-lg text-slate-700">{job.description}</div>
           </Card>
         ))}
       </div>
