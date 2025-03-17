@@ -13,8 +13,6 @@ export default {
     {
       pattern: /row-span-(\d+)/, // Matches row-span-1 to row-span-9
     },
-    // { pattern: /motion-delay-\[\d+ms\]/ },
-    // { pattern: /motion-delay-\[(\d+)ms\]/ },
   ],
   theme: {
     extend: {
