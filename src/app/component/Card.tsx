@@ -1,8 +1,6 @@
-"use client";
-
 interface CardProps {
-  gradientFrom: string;
-  gradientTo: string;
+  gradientFrom?: string;
+  gradientTo?: string;
   textColor?: string;
   delay?: string;
   col: number;
@@ -42,7 +40,7 @@ const Card = ({
             variant === "main" ? `0 4px 10px ${gradientTo}` : undefined,
         } as React.CSSProperties
       }
-      className={`${animation} relative flex flex-col items-center justify-center overflow-hidden rounded-3xl p-6 text-center ${textColor}  col-span-${col} row-span-${row} ${hoverClass} min-h-[150px] sm:min-h-[200px]
+      className={`${animation} relative flex flex-col items-center justify-center overflow-hidden rounded-3xl p-6 text-center ${textColor}  col-span-${col} row-span-${row} ${hoverClass} min-h-[200px]
       ${
         variant == "sub" &&
         "relative bg-white/30 backdrop-blur-md shadow-xl p-5 border border-white/50"

@@ -12,7 +12,6 @@ import Image from "next/image";
 export const home = [
   {
     title: "Work Experience",
-    description: "Explore my journey in the tech industry.",
     gradientFrom: "#3C91E6",
     gradientTo: "#c6e7db",
     icon: <HiOutlineBuildingOffice2 className="h-8 w-8" />,

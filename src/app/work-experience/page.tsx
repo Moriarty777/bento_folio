@@ -40,7 +40,7 @@ export default function WorkExperience() {
                 </div>
               )}
 
-              <div className="mt-2 text-lg text-slate-700">
+              <div className="mt-2 text-lg text-slate-700 font-bold">
                 {job.description}
               </div>
 

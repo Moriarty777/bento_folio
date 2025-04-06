@@ -25,11 +25,14 @@ export default function Home() {
             <div className="z-10 flex flex-col items-center justify-center space-y-4 px-4 py-4 transition-transform duration-500 group-hover:translate-y-[-5%]">
               {card.icon && card.icon}
               <h1 className="text-2xl font-bold">{card.title}</h1>
-              {card.description && (
-                <p className="mt-2 text-md opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+
+              {card.children}
+
+              {/* {card.description && (
+                <p className="absolute mt-2 text-md opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   {card.description}
                 </p>
-              )}
+              )} */}
               {card.buttonText && (
                 <button
                   onClick={() => card.path && navigate(card.path)}
@@ -41,7 +44,6 @@ export default function Home() {
                   {card.buttonText}
                 </button>
               )}
-              {card.children}
             </div>
           </Card>
         ))}
