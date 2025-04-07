@@ -7,8 +7,8 @@ import { useNavigate } from "../utils/navigation";
 export default function Page() {
   const navigate = useNavigate();
   return (
-    <div className="flex h-screen w-full items-center justify-center bg-[url('/images/bg/technology.jpg')] bg-cover bg-center">
-      <div className="grid w-full gap-6 p-5 md:h-screen md:grid-cols-10 md:grid-rows-8 auto-rows-fr grid-cols-1 grid-rows-1">
+    <div className="min-h-screen w-full bg-[url('/images/bg/technology.jpg')] bg-cover bg-center bg-no-repeat">
+      <div className="grid w-full gap-x-4 gap-y-4 p-4 md:grid-cols-10 md:grid-rows-8 grid-cols-1 grid-rows-1">
         {technology.map((tech, index) => (
           <Card
             key={index}
@@ -19,9 +19,9 @@ export default function Page() {
             row={tech.row}
             hover={tech.hover}
             variant={tech.variant}
-            animation={"motion-preset-slide-right  motion-duration-700"}
+            animation={"motion-preset-slide-right  motion-duration-1000"}
           >
-            <div className="z-10 flex flex-col items-center justify-center space-y-4 px-4 py-4 transition-transform duration-500 group-hover:translate-y-[-5%]">
+            <div className="z-10 flex flex-col items-center justify-center space-y-2 transition-transform duration-500 group-hover:translate-y-[-5%]">
               {tech.icon && (
                 <img src={tech.icon} alt={tech.title} width={50} height={50} />
               )}
