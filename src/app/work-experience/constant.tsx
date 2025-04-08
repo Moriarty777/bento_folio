@@ -44,7 +44,6 @@ export const workExperience = [
     row: 3,
     buttonText: "Go Back",
     path: "/",
-    hover: false,
     variant: "main",
   },
   {

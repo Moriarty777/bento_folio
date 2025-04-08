@@ -8,7 +8,7 @@ import { useNavigate } from "../utils/navigation";
 export default function WorkExperience() {
   const navigate = useNavigate();
   return (
-    <div className="flex h-screen w-full items-center justify-center bg-[url('/images/bg/workexperience.jpg')] bg-cover bg-center">
+    <div className="min-h-screen w-full bg-[url('/images/bg/workexperience.jpg')] bg-cover bg-center bg-no-repeat">
       <div className="grid w-full gap-5 p-5 md:h-screen md:grid-cols-9 md:grid-rows-9 auto-rows-fr grid-cols-1 grid-rows-1">
         {workExperience.map((job, index) => (
           <Card
@@ -18,7 +18,6 @@ export default function WorkExperience() {
             textColor="text-white"
             col={job.col}
             row={job.row}
-            hover={job.hover}
             variant={job.variant}
             animation={"motion-preset-bounce motion-duration-700"}
           >
@@ -27,22 +26,18 @@ export default function WorkExperience() {
                 <Image
                   src={job.icon}
                   alt={job.company}
-                  width={70}
-                  height={70}
+                  width={60}
+                  height={60}
                 />
               )}
               <h1 className="text-2xl font-bold">{job.company}</h1>
 
               {job.role && (
-                <div className="mt-4 text-xl font-bold text-gray-800 drop-shadow-md">
+                <div className="mt-4 text-xl font-bold text-slate-400 drop-shadow-md">
                   {job.role} -{" "}
                   <span className="text-slate-700">{job.location}</span>
                 </div>
               )}
-
-              <div className="mt-2 text-lg text-slate-700 font-bold">
-                {job.description}
-              </div>
 
               {job.buttonText && (
                 <button
